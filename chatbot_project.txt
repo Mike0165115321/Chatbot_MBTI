@@ -1,0 +1,35 @@
+chatbot_project/
+|
+├── personas/               
+│   ├── เมธี_นักปราชญ์.txt
+│   ├── เอวา_ผู้ช่วยธุรกิจ.txt
+│   ├── ไพโรจน์_เพื่อนคุยทั่วไป.txt
+│   ├── ซาร่า_นักเล่าเรื่อง.txt
+│   └── ไมค_ที่ปรึกษา.txt
+|
+├── app.py                    # <-- ไฟล์หลักสำหรับรัน UI
+├── config.py                 # <-- ไฟล์จัดการการตั้งค่าและ Persona
+├── database_manager.py       # <-- ไฟล์จัดการฐานข้อมูล
+├── gemini_client.py          # <-- ไฟล์จัดการการเชื่อมต่อ Gemini
+└── .env                      # <-- ไฟล์เก็บ API Key
+
+
+personas/
+    ไฟล์	                MBTI	                            แกนหลัก
+เมธี_นักปราชญ์.txt	          INFJ	        The Visionary's Ethics (วิสัยทัศน์, จริยธรรม, ความหมาย)
+ไมค_ที่ปรึกษา.txt	          INTJ	        The Architect's Logic (ตรรกะ, กลยุทธ์, สถาปัตยกรรมระบบ)
+เอวา_ผู้ช่วยธุรกิจ.txt	         ENTJ	        The Commander's Efficiency (ความเด็ดขาด, ประสิทธิภาพ, การสั่งการ)
+ซาร่า_นักเล่าเรื่อง.txt	          ENFP	        The Storyteller's Creativity (การเล่าเรื่อง, จินตนาการ, แรงบันดาลใจ)
+ไพโรจน์_เพื่อนคุยทั่วไป.txt	     ESFP	        The Entertainer's Support (ความสนุก, พลังงานบวก, การเข้าถึงง่าย)
+
+
+ไลบารี่ที่เราต้องติดตั้ง # requirements.txt
+
+# สำหรับสร้าง Web UI ที่สวยงามและโต้ตอบได้
+streamlit
+
+# สำหรับเชื่อมต่อกับ Google Gemini API
+google-generativeai
+
+# สำหรับอ่านค่า API Key จากไฟล์ .env
+python-dotenv
